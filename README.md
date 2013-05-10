@@ -1,4 +1,3 @@
 hack_coderangers
 ================
-
-np-complete
+We are coderangers. 
