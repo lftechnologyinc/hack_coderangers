@@ -45,7 +45,7 @@ public class LegalBodyDAOImpl extends BaseDAO implements LegalBodyDAO {
 
 		List<Complain> complains = new ArrayList<Complain>();
 		Complain complain;
-		String query = "SELECT * FROM drug";
+		String query = "SELECT * FROM complain";
 
 		try {
 			connect();
@@ -63,6 +63,7 @@ public class LegalBodyDAOImpl extends BaseDAO implements LegalBodyDAO {
 				complain.setHospitalName(resultSet.getString("hospital_name"));
 				complain.setEmail(resultSet.getString("email"));
 				complain.setPhoneNumber(resultSet.getString("phone_number"));
+				complains.add(complain);
 			}
 
 		} catch (Exception e) {
